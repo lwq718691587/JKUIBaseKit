@@ -1,0 +1,22 @@
+PODS:
+  - JKUIBaseKit (0.1.0):
+    - JKUIBaseKit/JKSVProgressHUD (= 0.1.0)
+    - SVProgressHUD
+  - JKUIBaseKit/JKSVProgressHUD (0.1.0):
+    - SVProgressHUD
+  - SVProgressHUD (2.1.2)
+
+DEPENDENCIES:
+  - JKUIBaseKit (from `../JKUIBaseKit.podspec`)
+
+EXTERNAL SOURCES:
+  JKUIBaseKit:
+    :path: ../JKUIBaseKit.podspec
+
+SPEC CHECKSUMS:
+  JKUIBaseKit: 5892295a69232bbea14500ce8c573e10308ba465
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+
+PODFILE CHECKSUM: f7a89b7c0612d7b4174446e035b600e41fc54249
+
+COCOAPODS: 1.2.0

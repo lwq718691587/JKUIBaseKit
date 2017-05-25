@@ -1,0 +1,11 @@
+
+
+target 'JKUIBaseKit_Example' do
+  pod 'JKUIBaseKit', :path => '../JKUIBaseKit.podspec'
+
+  target 'JKUIBaseKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
