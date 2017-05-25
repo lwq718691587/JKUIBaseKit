@@ -12,7 +12,7 @@ s.ios.deployment_target = '8.0'
 s.dependency 'SVProgressHUD'
 
 s.public_header_files = 'JKUIBaseKit/JKUIBaseKit.h'
-s.source_files = 'JKUIBaseKit/JKUIBaseKit.h'
+s.source_files = 'JKUIBaseKit',"*.{h,m}"
 
 s.subspec 'JKSVProgressHUD' do |ss|
  ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"

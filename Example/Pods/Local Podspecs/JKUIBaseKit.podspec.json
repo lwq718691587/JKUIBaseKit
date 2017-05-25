@@ -21,7 +21,10 @@
     ]
   },
   "public_header_files": "JKUIBaseKit/JKUIBaseKit.h",
-  "source_files": "JKUIBaseKit/JKUIBaseKit.h",
+  "source_files": [
+    "JKUIBaseKit",
+    "*.{h,m}"
+  ],
   "subspecs": [
     {
       "name": "JKSVProgressHUD",
