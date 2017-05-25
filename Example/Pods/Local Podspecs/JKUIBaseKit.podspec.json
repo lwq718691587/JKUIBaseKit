@@ -29,6 +29,13 @@
         "JKUIBaseKit/JKSVProgressHUD",
         "*.{h,m}"
       ]
+    },
+    {
+      "name": "JKUIcolorCategory",
+      "source_files": [
+        "JKUIBaseKit/JKUIcolorCategory",
+        "*.{h,m}"
+      ]
     }
   ]
 }
