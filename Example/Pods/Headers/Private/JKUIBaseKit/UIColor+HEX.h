@@ -1,1 +1,1 @@
-../../../../../JKUIBaseKit/JKUIcolorCategory/UIColor+HEX.h
+../../../../../JKUIBaseKit/JKUICategory/UIColor+HEX.h

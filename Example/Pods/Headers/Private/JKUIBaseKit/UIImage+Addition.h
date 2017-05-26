@@ -1,1 +1,1 @@
-../../../../../JKUIBaseKit/JKUIcolorCategory/UIImage+Addition.h
+../../../../../JKUIBaseKit/JKUICategory/UIImage+Addition.h

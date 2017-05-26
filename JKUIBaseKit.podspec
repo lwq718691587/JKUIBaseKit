@@ -18,8 +18,8 @@ s.subspec 'JKSVProgressHUD' do |ss|
  ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"
 end
 
-s.subspec 'JKUIcolorCategory' do |ss|
-ss.source_files = "JKUIBaseKit/JKUIcolorCategory","*.{h,m}"
+s.subspec 'JKUICategory' do |ss|
+ss.source_files = "JKUIBaseKit/JKUICategory","*.{h,m}"
 end
 
 end

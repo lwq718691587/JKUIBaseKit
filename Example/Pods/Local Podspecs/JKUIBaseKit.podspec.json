@@ -34,9 +34,9 @@
       ]
     },
     {
-      "name": "JKUIcolorCategory",
+      "name": "JKUICategory",
       "source_files": [
-        "JKUIBaseKit/JKUIcolorCategory",
+        "JKUIBaseKit/JKUICategory",
         "*.{h,m}"
       ]
     }
