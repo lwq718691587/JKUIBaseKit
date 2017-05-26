@@ -14,6 +14,7 @@
 #import "UIImage+jkAddition.h"
 #import "UIView+jkAdditional.h"
 #import "JKMacro_UIBase.h"
+#import "UINavigationController+jkAddition.h"
 
 #endif /* JKUIBaseKit_h */
 

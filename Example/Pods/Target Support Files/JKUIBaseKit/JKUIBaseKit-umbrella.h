@@ -15,6 +15,7 @@
 #import "UIColor+jkHEX.h"
 #import "UIImage+jkAddition.h"
 #import "UILabel+jkAdd.h"
+#import "UINavigationController+jkAddition.h"
 #import "UISearchBar+jkStyle.h"
 #import "UIView+jkAdditional.h"
 #import "JKMacro_UIBase.h"

@@ -8,6 +8,7 @@
 
 #import "JKViewController.h"
 #import <JKUIBaseKit/JKUIBaseKit.h>
+#import "JKViewController_A.h"
 @interface JKViewController ()
 
 @end
@@ -18,7 +19,19 @@
 {
     [super viewDidLoad];
     
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapFun)];
+    [self.view addGestureRecognizer:tap];
+    
+    [self.navigationController navigationGoBackButton:@"a"];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+
+-(void)tapFun{
+    JKViewController_A * vc = [[JKViewController_A alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

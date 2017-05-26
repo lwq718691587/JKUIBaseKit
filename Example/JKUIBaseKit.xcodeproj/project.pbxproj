@@ -24,6 +24,8 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B019215135F9F6509A7751CB /* Pods_JKUIBaseKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439309F03010D5EA20573F50 /* Pods_JKUIBaseKit_Example.framework */; };
 		B0749FF6DBD6A4CD296CD9DF /* Pods_JKUIBaseKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C505B2E3624A971C4CDA7C /* Pods_JKUIBaseKit_Tests.framework */; };
+		FCFE7BB51ED824F400CF3B4C /* JKViewController_A.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */; };
+		FCFE7BB81ED8250100CF3B4C /* JKViewController_B.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE7BB71ED8250100CF3B4C /* JKViewController_B.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +63,16 @@
 		84C505B2E3624A971C4CDA7C /* Pods_JKUIBaseKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKUIBaseKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		937F9CE3BDE0B66DA851334D /* Pods-JKUIBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUIBaseKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUIBaseKit_Example/Pods-JKUIBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9F999B13BFF18191A9AACE49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9F999B13BFF18191A9AACE49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A61FE70C7B5AFC3121F024B3 /* Pods-JKUIBaseKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUIBaseKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUIBaseKit_Tests/Pods-JKUIBaseKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B15C96F090EEC713E81F45C2 /* Pods-JKUIBaseKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUIBaseKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKUIBaseKit_Tests/Pods-JKUIBaseKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B801550A4572C5CCD4F4DB3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B801550A4572C5CCD4F4DB3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D0FE6C1E8D005BE2C8A993F6 /* Pods-JKUIBaseKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUIBaseKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUIBaseKit_Example/Pods-JKUIBaseKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F05D208A794B6198608C45F0 /* JKUIBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKUIBaseKit.podspec; path = ../JKUIBaseKit.podspec; sourceTree = "<group>"; };
+		F05D208A794B6198608C45F0 /* JKUIBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKUIBaseKit.podspec; path = ../JKUIBaseKit.podspec; sourceTree = "<group>"; };
+		FCFE7BB31ED824F400CF3B4C /* JKViewController_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKViewController_A.h; sourceTree = "<group>"; };
+		FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKViewController_A.m; sourceTree = "<group>"; };
+		FCFE7BB61ED8250100CF3B4C /* JKViewController_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKViewController_B.h; sourceTree = "<group>"; };
+		FCFE7BB71ED8250100CF3B4C /* JKViewController_B.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKViewController_B.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JKViewController.h */,
 				6003F5A6195388D20070C39A /* JKViewController.m */,
+				FCFE7BB31ED824F400CF3B4C /* JKViewController_A.h */,
+				FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */,
+				FCFE7BB61ED8250100CF3B4C /* JKViewController_B.h */,
+				FCFE7BB71ED8250100CF3B4C /* JKViewController_B.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -394,9 +404,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFE7BB81ED8250100CF3B4C /* JKViewController_B.m in Sources */,
 				6003F59E195388D20070C39A /* JKAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JKViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				FCFE7BB51ED824F400CF3B4C /* JKViewController_A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
