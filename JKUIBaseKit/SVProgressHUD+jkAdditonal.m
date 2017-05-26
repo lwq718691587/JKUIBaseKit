@@ -13,7 +13,6 @@
 #define KeyWindow  [[UIApplication sharedApplication] keyWindow]
 @implementation SVProgressHUD (jkAdditonal)
 
-
 + (void)jk_show{
     [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.frame.size.width/2, KeyWindow.frame.size.height/2)];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];

@@ -10,7 +10,6 @@
 
 @interface UISearchBar (jkStyle)
 
--(void)jkStyle;
 // 是否居中
 -(void)setHasCentredPlaceholder:(BOOL)hasCentredPlaceholder;
 @end
