@@ -190,8 +190,8 @@
 		1754155D053AE54AC6EB5F4C51C5DCA6 /* JKUICategory */ = {
 			isa = PBXGroup;
 			children = (
-				8CED05FB1ED80E51009937F8 /* UINavigationController+jkAddition.m */,
 				8CED05FC1ED80E51009937F8 /* UINavigationController+jkAddition.h */,
+				8CED05FB1ED80E51009937F8 /* UINavigationController+jkAddition.m */,
 				6C803146224115ADFB34204F018148B5 /* UIColor+jkHEX.h */,
 				77578A1E78B116EB0D9EE4D7E90CDFDA /* UIColor+jkHEX.m */,
 				B601D79E288C69B6ECC3CDB6346268F9 /* UIImage+jkAddition.h */,
