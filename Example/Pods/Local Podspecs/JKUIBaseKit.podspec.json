@@ -20,29 +20,5 @@
 
     ]
   },
-  "public_header_files": "JKUIBaseKit/JKUIBaseKit.h",
-  "source_files": "JKUIBaseKit/JKUIBaseKit.h",
-  "subspecs": [
-    {
-      "name": "JKSVProgressHUD",
-      "source_files": [
-        "JKUIBaseKit/JKSVProgressHUD",
-        "*.{h,m}"
-      ]
-    },
-    {
-      "name": "JKUICategory",
-      "source_files": [
-        "JKUIBaseKit/JKUICategory",
-        "*.{h,m}"
-      ]
-    },
-    {
-      "name": "JKUIMacro",
-      "source_files": [
-        "JKUIBaseKit/JKUIMacro",
-        "*.{h,m}"
-      ]
-    }
-  ]
+  "source_files": "JKUIBaseKit/**/*"
 }

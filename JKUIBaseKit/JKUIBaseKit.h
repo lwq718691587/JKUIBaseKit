@@ -13,7 +13,6 @@
 #import "UIColor+jkHEX.h"
 #import "UIImage+jkAddition.h"
 #import "UIView+jkAdditional.h"
-
 #import "JKMacro_UIBase.h"
 
 #endif /* JKUIBaseKit_h */
