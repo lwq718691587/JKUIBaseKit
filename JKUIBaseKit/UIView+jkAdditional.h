@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Additional)
+@interface UIView (jkAdditional)
 
 /**
  * Shortcut for frame.origin.x.

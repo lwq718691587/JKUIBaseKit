@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UILabel (Add)
+@interface UILabel (jkAdd)
 /**
  *  字间距
  */

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UISearchBar (style)
+@interface UISearchBar (jkStyle)
 
 -(void)jkStyle;
 // 是否居中

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 lijiawei. All rights reserved.
 //
 
-#import "UISearchBar+style.h"
+#import "UISearchBar+jkStyle.h"
 
-@implementation UISearchBar (style)
+@implementation UISearchBar (jkStyle)
 
 -(void)jkStyle{
     [self setImage:[UIImage imageNamed:@"icon_input_search"] forSearchBarIcon:UISearchBarIconSearch state:UIControlStateNormal];

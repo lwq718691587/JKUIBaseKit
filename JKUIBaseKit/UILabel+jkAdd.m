@@ -5,12 +5,12 @@
 //  Created by lijiawei on 2017/3/10.
 //  Copyright © 2017年 lijiawei. All rights reserved.
 
-#import "UILabel+Add.h"
+#import "UILabel+jkAdd.h"
 #import <objc/runtime.h>
 #import <CoreText/CoreText.h>
 
 
-@implementation UILabel (Add)
+@implementation UILabel (jkAdd)
 
 -(CGFloat)characterSpace{
    return [objc_getAssociatedObject(self,_cmd) floatValue];

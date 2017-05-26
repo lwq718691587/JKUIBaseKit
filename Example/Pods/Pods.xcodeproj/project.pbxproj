@@ -23,15 +23,13 @@
 		8C117CBD1ED6E98500B16357 /* UIColor+jkHEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CAF1ED6E98500B16357 /* UIColor+jkHEX.h */; };
 		8C117CBE1ED6E98500B16357 /* UIColor+jkHEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB01ED6E98500B16357 /* UIColor+jkHEX.m */; };
 		8C117CBF1ED6E98500B16357 /* UIImage+jkAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB11ED6E98500B16357 /* UIImage+jkAddition.h */; };
-		8C117CC01ED6E98500B16357 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB21ED6E98500B16357 /* UIImage+Addition.m */; };
-		8C117CC11ED6E98500B16357 /* UIImage+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB31ED6E98500B16357 /* UIImage+Additional.h */; };
-		8C117CC21ED6E98500B16357 /* UIImage+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB41ED6E98500B16357 /* UIImage+Additional.m */; };
-		8C117CC31ED6E98500B16357 /* UILabel+Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB51ED6E98500B16357 /* UILabel+Add.h */; };
-		8C117CC41ED6E98500B16357 /* UILabel+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB61ED6E98500B16357 /* UILabel+Add.m */; };
-		8C117CC51ED6E98500B16357 /* UISearchBar+style.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB71ED6E98500B16357 /* UISearchBar+style.h */; };
-		8C117CC61ED6E98500B16357 /* UISearchBar+style.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB81ED6E98500B16357 /* UISearchBar+style.m */; };
-		8C117CC71ED6E98500B16357 /* UIView+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB91ED6E98500B16357 /* UIView+Additional.h */; };
-		8C117CC81ED6E98500B16357 /* UIView+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CBA1ED6E98500B16357 /* UIView+Additional.m */; };
+		8C117CC01ED6E98500B16357 /* UIImage+jkAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB21ED6E98500B16357 /* UIImage+jkAddition.m */; };
+		8C117CC31ED6E98500B16357 /* UILabel+jkAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB51ED6E98500B16357 /* UILabel+jkAdd.h */; };
+		8C117CC41ED6E98500B16357 /* UILabel+jkAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB61ED6E98500B16357 /* UILabel+jkAdd.m */; };
+		8C117CC51ED6E98500B16357 /* UISearchBar+jkStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB71ED6E98500B16357 /* UISearchBar+jkStyle.h */; };
+		8C117CC61ED6E98500B16357 /* UISearchBar+jkStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CB81ED6E98500B16357 /* UISearchBar+jkStyle.m */; };
+		8C117CC71ED6E98500B16357 /* UIView+jkAdditional.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C117CB91ED6E98500B16357 /* UIView+jkAdditional.h */; };
+		8C117CC81ED6E98500B16357 /* UIView+jkAdditional.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C117CBA1ED6E98500B16357 /* UIView+jkAdditional.m */; };
 		97A183559E9691FBC933C54FC2C1C051 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = C447657581C0A5726D1B490667A418D4 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7A4A4CABCC865DB09D4EC71AC36DB60 /* SVProgressHUD+Additonal.h in Headers */ = {isa = PBXBuildFile; fileRef = 499AED27073EDB615FC6D7FA7CE0A537 /* SVProgressHUD+Additonal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9F0E61F406FB3335882C31DFAFD6C1D /* Pods-JKUIBaseKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0692FACE08D282A8E1CE24972D61B8A7 /* Pods-JKUIBaseKit_Tests-dummy.m */; };
@@ -91,15 +89,13 @@
 		8C117CAF1ED6E98500B16357 /* UIColor+jkHEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+jkHEX.h"; path = "JKUIBaseKit/UIColor+jkHEX.h"; sourceTree = "<group>"; };
 		8C117CB01ED6E98500B16357 /* UIColor+jkHEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+jkHEX.m"; path = "JKUIBaseKit/UIColor+jkHEX.m"; sourceTree = "<group>"; };
 		8C117CB11ED6E98500B16357 /* UIImage+jkAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+jkAddition.h"; path = "JKUIBaseKit/UIImage+jkAddition.h"; sourceTree = "<group>"; };
-		8C117CB21ED6E98500B16357 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Addition.m"; path = "JKUIBaseKit/UIImage+Addition.m"; sourceTree = "<group>"; };
-		8C117CB31ED6E98500B16357 /* UIImage+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Additional.h"; path = "JKUIBaseKit/UIImage+Additional.h"; sourceTree = "<group>"; };
-		8C117CB41ED6E98500B16357 /* UIImage+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Additional.m"; path = "JKUIBaseKit/UIImage+Additional.m"; sourceTree = "<group>"; };
-		8C117CB51ED6E98500B16357 /* UILabel+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Add.h"; path = "JKUIBaseKit/UILabel+Add.h"; sourceTree = "<group>"; };
-		8C117CB61ED6E98500B16357 /* UILabel+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Add.m"; path = "JKUIBaseKit/UILabel+Add.m"; sourceTree = "<group>"; };
-		8C117CB71ED6E98500B16357 /* UISearchBar+style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UISearchBar+style.h"; path = "JKUIBaseKit/UISearchBar+style.h"; sourceTree = "<group>"; };
-		8C117CB81ED6E98500B16357 /* UISearchBar+style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISearchBar+style.m"; path = "JKUIBaseKit/UISearchBar+style.m"; sourceTree = "<group>"; };
-		8C117CB91ED6E98500B16357 /* UIView+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Additional.h"; path = "JKUIBaseKit/UIView+Additional.h"; sourceTree = "<group>"; };
-		8C117CBA1ED6E98500B16357 /* UIView+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Additional.m"; path = "JKUIBaseKit/UIView+Additional.m"; sourceTree = "<group>"; };
+		8C117CB21ED6E98500B16357 /* UIImage+jkAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+jkAddition.m"; path = "JKUIBaseKit/UIImage+jkAddition.m"; sourceTree = "<group>"; };
+		8C117CB51ED6E98500B16357 /* UILabel+jkAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+jkAdd.h"; path = "JKUIBaseKit/UILabel+jkAdd.h"; sourceTree = "<group>"; };
+		8C117CB61ED6E98500B16357 /* UILabel+jkAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+jkAdd.m"; path = "JKUIBaseKit/UILabel+jkAdd.m"; sourceTree = "<group>"; };
+		8C117CB71ED6E98500B16357 /* UISearchBar+jkStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UISearchBar+jkStyle.h"; path = "JKUIBaseKit/UISearchBar+jkStyle.h"; sourceTree = "<group>"; };
+		8C117CB81ED6E98500B16357 /* UISearchBar+jkStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UISearchBar+jkStyle.m"; path = "JKUIBaseKit/UISearchBar+jkStyle.m"; sourceTree = "<group>"; };
+		8C117CB91ED6E98500B16357 /* UIView+jkAdditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+jkAdditional.h"; path = "JKUIBaseKit/UIView+jkAdditional.h"; sourceTree = "<group>"; };
+		8C117CBA1ED6E98500B16357 /* UIView+jkAdditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+jkAdditional.m"; path = "JKUIBaseKit/UIView+jkAdditional.m"; sourceTree = "<group>"; };
 		8F5E8422CB891F1A2A705F0E9CF91A78 /* Pods-JKUIBaseKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKUIBaseKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8FB0F10573719161116FFA1595D5E06E /* SVProgressHUD+Additonal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+Additonal.m"; sourceTree = "<group>"; };
 		91B19712C1AD1DB240A6A027001E6DDB /* Pods-JKUIBaseKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKUIBaseKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -204,15 +200,13 @@
 				8C117CAF1ED6E98500B16357 /* UIColor+jkHEX.h */,
 				8C117CB01ED6E98500B16357 /* UIColor+jkHEX.m */,
 				8C117CB11ED6E98500B16357 /* UIImage+jkAddition.h */,
-				8C117CB21ED6E98500B16357 /* UIImage+Addition.m */,
-				8C117CB31ED6E98500B16357 /* UIImage+Additional.h */,
-				8C117CB41ED6E98500B16357 /* UIImage+Additional.m */,
-				8C117CB51ED6E98500B16357 /* UILabel+Add.h */,
-				8C117CB61ED6E98500B16357 /* UILabel+Add.m */,
-				8C117CB71ED6E98500B16357 /* UISearchBar+style.h */,
-				8C117CB81ED6E98500B16357 /* UISearchBar+style.m */,
-				8C117CB91ED6E98500B16357 /* UIView+Additional.h */,
-				8C117CBA1ED6E98500B16357 /* UIView+Additional.m */,
+				8C117CB21ED6E98500B16357 /* UIImage+jkAddition.m */,
+				8C117CB51ED6E98500B16357 /* UILabel+jkAdd.h */,
+				8C117CB61ED6E98500B16357 /* UILabel+jkAdd.m */,
+				8C117CB71ED6E98500B16357 /* UISearchBar+jkStyle.h */,
+				8C117CB81ED6E98500B16357 /* UISearchBar+jkStyle.m */,
+				8C117CB91ED6E98500B16357 /* UIView+jkAdditional.h */,
+				8C117CBA1ED6E98500B16357 /* UIView+jkAdditional.m */,
 				2C6571CF4C1DD10C88255628562B084B /* JKSVProgressHUD */,
 				9616CF3A77867BB8D01C2229C9E94C37 /* JKUIBaseKit */,
 				0FB94A14F91C2D84DF0BA081D2541D6F /* Support Files */,
@@ -379,13 +373,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C117CBD1ED6E98500B16357 /* UIColor+jkHEX.h in Headers */,
-				8C117CC71ED6E98500B16357 /* UIView+Additional.h in Headers */,
-				8C117CC11ED6E98500B16357 /* UIImage+Additional.h in Headers */,
+				8C117CC71ED6E98500B16357 /* UIView+jkAdditional.h in Headers */,
 				6FE7DBD0DF1BE80CA9B90CE28AC04006 /* JKUIBaseKit.h in Headers */,
 				A7A4A4CABCC865DB09D4EC71AC36DB60 /* SVProgressHUD+Additonal.h in Headers */,
 				8C117CBF1ED6E98500B16357 /* UIImage+jkAddition.h in Headers */,
-				8C117CC31ED6E98500B16357 /* UILabel+Add.h in Headers */,
-				8C117CC51ED6E98500B16357 /* UISearchBar+style.h in Headers */,
+				8C117CC31ED6E98500B16357 /* UILabel+jkAdd.h in Headers */,
+				8C117CC51ED6E98500B16357 /* UISearchBar+jkStyle.h in Headers */,
 				8C117CBB1ED6E98500B16357 /* SVProgressHUD+jkAdditonal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,13 +491,12 @@
 			files = (
 				3AE018E4940054B5F3B6AA9D048808DE /* JKUIBaseKit-dummy.m in Sources */,
 				8C117CBE1ED6E98500B16357 /* UIColor+jkHEX.m in Sources */,
-				8C117CC21ED6E98500B16357 /* UIImage+Additional.m in Sources */,
-				8C117CC61ED6E98500B16357 /* UISearchBar+style.m in Sources */,
+				8C117CC61ED6E98500B16357 /* UISearchBar+jkStyle.m in Sources */,
 				C5C8C22899E7B564E0A616A988C67611 /* SVProgressHUD+Additonal.m in Sources */,
-				8C117CC01ED6E98500B16357 /* UIImage+Addition.m in Sources */,
+				8C117CC01ED6E98500B16357 /* UIImage+jkAddition.m in Sources */,
 				8C117CBC1ED6E98500B16357 /* SVProgressHUD+jkAdditonal.m in Sources */,
-				8C117CC81ED6E98500B16357 /* UIView+Additional.m in Sources */,
-				8C117CC41ED6E98500B16357 /* UILabel+Add.m in Sources */,
+				8C117CC81ED6E98500B16357 /* UIView+jkAdditional.m in Sources */,
+				8C117CC41ED6E98500B16357 /* UILabel+jkAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
