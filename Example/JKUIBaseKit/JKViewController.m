@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    @"s";
+    NSString * a = @"s";
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
