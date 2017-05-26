@@ -10,6 +10,12 @@
 #define JKUIBaseKit_h
 
 #import "SVProgressHUD+Additonal.h"
+#import "UIColor+HEX.h"
+#import "UIImage+Addition.h"
+#import "UIView+Additional.h"
+#import "JKUIMacro.h"
+
+
 
 
 #endif /* JKUIBaseKit_h */
