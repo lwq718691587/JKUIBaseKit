@@ -12,8 +12,6 @@
 
 #import "JKUIBaseKit.h"
 #import "SVProgressHUD+jkAdditonal.h"
-#import "test.h"
-#import "testa.h"
 #import "UIColor+jkHEX.h"
 #import "UIImage+jkAddition.h"
 #import "UILabel+jkAdd.h"
