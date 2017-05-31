@@ -27,6 +27,14 @@
 		726D78BA96FBC7BB2C9EB6EAE3C709D0 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EB951A2AFCBDCFE1B3C8CAA45738F432 /* SVProgressHUD.m */; };
 		7555E1D5A487FA0046B17F1B9D7021DB /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1296BE4DDEB09F3CF2072C7073D7B3 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89EC0C00EE92DF541A534917B852B954 /* UIColor+jkHEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 642BAA65CF5646A990E79463F41F1311 /* UIColor+jkHEX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C73BC981EDE6C1F008C7535 /* UITextView+jkPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C73BC961EDE6C1F008C7535 /* UITextView+jkPlaceholder.h */; };
+		8C73BC991EDE6C1F008C7535 /* UITextView+jkPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73BC971EDE6C1F008C7535 /* UITextView+jkPlaceholder.m */; };
+		8C73BC9C1EDE6C33008C7535 /* UIView+jkLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C73BC9A1EDE6C33008C7535 /* UIView+jkLine.h */; };
+		8C73BC9D1EDE6C33008C7535 /* UIView+jkLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73BC9B1EDE6C33008C7535 /* UIView+jkLine.m */; };
+		8C73BCA01EDE6CDF008C7535 /* UIView+jkAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C73BC9E1EDE6CDF008C7535 /* UIView+jkAttributedString.h */; };
+		8C73BCA11EDE6CDF008C7535 /* UIView+jkAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73BC9F1EDE6CDF008C7535 /* UIView+jkAttributedString.m */; };
+		8C73BCA51EDE6F67008C7535 /* JKPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C73BCA31EDE6F67008C7535 /* JKPickerView.h */; };
+		8C73BCA61EDE6F67008C7535 /* JKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73BCA41EDE6F67008C7535 /* JKPickerView.m */; };
 		917404F7680C79955DBC63F055E18140 /* UILabel+jkAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FDE385ED61A76EC7DF427B810771855 /* UILabel+jkAdd.m */; };
 		91F866F6F1EEEB7E494CD81D1D845C4A /* JKMacro_UIBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD04E19232694D02B1921E291D2556D /* JKMacro_UIBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4B81B7E21D2BAD166CB61A64F9B7636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8F2488F00D72ADB9C4DF98D473C5C9 /* Foundation.framework */; };
@@ -74,7 +82,7 @@
 
 /* Begin PBXFileReference section */
 		082F7A427E5E1865CD7B03B52D21EACA /* Pods-JKUIBaseKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKUIBaseKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		085C2C0D67F77E5DF5CF9B646F17D3FC /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		085C2C0D67F77E5DF5CF9B646F17D3FC /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A33818BE8D9189568C971B3AB6D9C69 /* Pods-JKUIBaseKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKUIBaseKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		107181B83D8A45822244024B2E2E557E /* JKUIBaseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKUIBaseKit.h; sourceTree = "<group>"; };
 		14E3269CAB408920891E504C56350DAB /* UINavigationController+jkAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+jkAddition.m"; sourceTree = "<group>"; };
@@ -83,13 +91,13 @@
 		1D6DDE14E287C78E4CB80F5579D69453 /* Pods-JKUIBaseKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKUIBaseKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		222B9B0327637971894449A97DA606C6 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BB7E649E1B2EEEB5D7CEC904CADDC3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		2679B3EC886CA1A15A8BDBCB65D66449 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		2679B3EC886CA1A15A8BDBCB65D66449 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
 		2CDC9F27823E18CB972FB8AFD6B120F6 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		2DB06DC7A37DFDAFB645A7E775FE4E51 /* Pods_JKUIBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKUIBaseKit_Example.framework; path = "Pods-JKUIBaseKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB06DC7A37DFDAFB645A7E775FE4E51 /* Pods_JKUIBaseKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKUIBaseKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		301C57382BB1A6D80D6091D3BDF531E4 /* Pods-JKUIBaseKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKUIBaseKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		34896EF29568B13F67A4D5EC88350FFA /* UIColor+jkHEX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+jkHEX.m"; sourceTree = "<group>"; };
 		38925B316DDFC49DA22D339B53FE496C /* JKUIBaseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKUIBaseKit.xcconfig; sourceTree = "<group>"; };
-		44BC7D1357F0AF6CFDA70978E819277D /* JKUIBaseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JKUIBaseKit.modulemap; sourceTree = "<group>"; };
+		44BC7D1357F0AF6CFDA70978E819277D /* JKUIBaseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JKUIBaseKit.modulemap; sourceTree = "<group>"; };
 		44BFFA560B7337DE0CB6893BACB17DCD /* UINavigationController+jkAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+jkAddition.h"; sourceTree = "<group>"; };
 		45345F371186FC1299293B470351C236 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
 		47DC29DD1255A90F8D770A2A54DBBAFF /* UIImage+jkAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+jkAddition.m"; sourceTree = "<group>"; };
@@ -97,20 +105,28 @@
 		514196A11E9DB9A620E7D54D6F6A1058 /* UIView+jkAdditional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+jkAdditional.h"; sourceTree = "<group>"; };
 		52239D1A127C79A19D0758E90EA6C747 /* JKUIBaseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKUIBaseKit-umbrella.h"; sourceTree = "<group>"; };
 		5D3B77954AED70CCDAFF7B4CD3E18B16 /* SVProgressHUD+jkAdditonal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+jkAdditonal.h"; sourceTree = "<group>"; };
-		5D462F66CA15754D0F652BEF21E90C5F /* JKUIBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKUIBaseKit.framework; path = JKUIBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D462F66CA15754D0F652BEF21E90C5F /* JKUIBaseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKUIBaseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD30C1DF27A4EFB3CEA504E79D42D00 /* JKUIBaseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKUIBaseKit-prefix.pch"; sourceTree = "<group>"; };
 		5FDE385ED61A76EC7DF427B810771855 /* UILabel+jkAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+jkAdd.m"; sourceTree = "<group>"; };
 		60BCB0E8D8BDCA3887B32383563D8288 /* UISearchBar+jkStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+jkStyle.m"; sourceTree = "<group>"; };
 		6149505CA8BA086FB777D2EEF241CF7A /* Pods-JKUIBaseKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKUIBaseKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		642BAA65CF5646A990E79463F41F1311 /* UIColor+jkHEX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+jkHEX.h"; sourceTree = "<group>"; };
-		685B600F36AB0819FB510DF153BA18CD /* Pods_JKUIBaseKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKUIBaseKit_Tests.framework; path = "Pods-JKUIBaseKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		685B600F36AB0819FB510DF153BA18CD /* Pods_JKUIBaseKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKUIBaseKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		734D6C0CFBB10AA48E159948C477742E /* Pods-JKUIBaseKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKUIBaseKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73A670E72D55675538FF9C37CC98E7FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78542018A287971EAD48976694C90478 /* Pods-JKUIBaseKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKUIBaseKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		88275CDD7E82CF3C380A6B9C96A12090 /* Pods-JKUIBaseKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKUIBaseKit_Example-resources.sh"; sourceTree = "<group>"; };
 		8B3509E8B29FEE63F34059BDF6D9074F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C21E55057EAE8CF4185802B40E6BC3D /* JKUIBaseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKUIBaseKit-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8C73BC961EDE6C1F008C7535 /* UITextView+jkPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+jkPlaceholder.h"; sourceTree = "<group>"; };
+		8C73BC971EDE6C1F008C7535 /* UITextView+jkPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+jkPlaceholder.m"; sourceTree = "<group>"; };
+		8C73BC9A1EDE6C33008C7535 /* UIView+jkLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+jkLine.h"; sourceTree = "<group>"; };
+		8C73BC9B1EDE6C33008C7535 /* UIView+jkLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+jkLine.m"; sourceTree = "<group>"; };
+		8C73BC9E1EDE6CDF008C7535 /* UIView+jkAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+jkAttributedString.h"; sourceTree = "<group>"; };
+		8C73BC9F1EDE6CDF008C7535 /* UIView+jkAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+jkAttributedString.m"; sourceTree = "<group>"; };
+		8C73BCA31EDE6F67008C7535 /* JKPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPickerView.h; sourceTree = "<group>"; };
+		8C73BCA41EDE6F67008C7535 /* JKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPickerView.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A1296BE4DDEB09F3CF2072C7073D7B3 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		9AD04E19232694D02B1921E291D2556D /* JKMacro_UIBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKMacro_UIBase.h; sourceTree = "<group>"; };
 		9E71CFC73DB55784D0519F97BA41F995 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -126,7 +142,7 @@
 		C448586FB64ED635E190F6904D743930 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		C8772942F3625B1EADC291F2C9F469D8 /* UIView+jkAdditional.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+jkAdditional.m"; sourceTree = "<group>"; };
 		CAA1846AECC032D56339A852C6F0819B /* Pods-JKUIBaseKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKUIBaseKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		CDF974DB4E5CAA2DD1BE3FF1DF185909 /* Pods-JKUIBaseKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JKUIBaseKit_Example.modulemap"; sourceTree = "<group>"; };
+		CDF974DB4E5CAA2DD1BE3FF1DF185909 /* Pods-JKUIBaseKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKUIBaseKit_Example.modulemap"; sourceTree = "<group>"; };
 		D454B457B324952BD705962C4EE5F98E /* Pods-JKUIBaseKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKUIBaseKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D6C04C9F65BB3580D5536C9CA7EE9474 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D801805BB915E535CC05F4B4FE832E28 /* UILabel+jkAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+jkAdd.h"; sourceTree = "<group>"; };
@@ -134,7 +150,7 @@
 		D9E0A8598E01887BB17C48B654F0E09B /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		DA18FD5ADFA52759D1AA2CC4EA29C9A6 /* Pods-JKUIBaseKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKUIBaseKit_Example-dummy.m"; sourceTree = "<group>"; };
 		DDD6FA7EE4F47ADEAD4DBA9D72F6DC7F /* UISearchBar+jkStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+jkStyle.h"; sourceTree = "<group>"; };
-		E074A67DF87BFA95CFC4B1CB0BB127F7 /* Pods-JKUIBaseKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-JKUIBaseKit_Tests.modulemap"; sourceTree = "<group>"; };
+		E074A67DF87BFA95CFC4B1CB0BB127F7 /* Pods-JKUIBaseKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKUIBaseKit_Tests.modulemap"; sourceTree = "<group>"; };
 		E6456237FB03F6CCC42CC65518735B70 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		E71675ABFC0BBBF40475C9017980A9B8 /* Pods-JKUIBaseKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKUIBaseKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		EB951A2AFCBDCFE1B3C8CAA45738F432 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
@@ -219,7 +235,6 @@
 				9E09F6F6417032AB83C07907A8D7E815 /* Resources */,
 				AA5C3E6007857393B276FDAE952A73B6 /* Support Files */,
 			);
-			name = SVProgressHUD;
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -256,8 +271,13 @@
 				60BCB0E8D8BDCA3887B32383563D8288 /* UISearchBar+jkStyle.m */,
 				514196A11E9DB9A620E7D54D6F6A1058 /* UIView+jkAdditional.h */,
 				C8772942F3625B1EADC291F2C9F469D8 /* UIView+jkAdditional.m */,
+				8C73BC961EDE6C1F008C7535 /* UITextView+jkPlaceholder.h */,
+				8C73BC971EDE6C1F008C7535 /* UITextView+jkPlaceholder.m */,
+				8C73BC9A1EDE6C33008C7535 /* UIView+jkLine.h */,
+				8C73BC9B1EDE6C33008C7535 /* UIView+jkLine.m */,
+				8C73BC9E1EDE6CDF008C7535 /* UIView+jkAttributedString.h */,
+				8C73BC9F1EDE6CDF008C7535 /* UIView+jkAttributedString.m */,
 			);
-			name = JKUICategory;
 			path = JKUICategory;
 			sourceTree = "<group>";
 		};
@@ -272,12 +292,12 @@
 		7CC947C158CA131EFEFE77057161DD43 /* JKUIBaseKit */ = {
 			isa = PBXGroup;
 			children = (
+				8C73BCA21EDE6F0E008C7535 /* JKUI */,
 				107181B83D8A45822244024B2E2E557E /* JKUIBaseKit.h */,
 				A582E7DEAF853F59FEB376F88C72242F /* JKSVProgressHUD */,
 				73DCD1CEDADD90E81D03C57ACA197D1F /* JKUICategory */,
 				D896F1B47874BDDE2AFB9ED7DB4BC219 /* JKUIMacro */,
 			);
-			name = JKUIBaseKit;
 			path = JKUIBaseKit;
 			sourceTree = "<group>";
 		};
@@ -305,6 +325,15 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/JKUIBaseKit";
+			sourceTree = "<group>";
+		};
+		8C73BCA21EDE6F0E008C7535 /* JKUI */ = {
+			isa = PBXGroup;
+			children = (
+				8C73BCA31EDE6F67008C7535 /* JKPickerView.h */,
+				8C73BCA41EDE6F67008C7535 /* JKPickerView.m */,
+			);
+			path = JKUI;
 			sourceTree = "<group>";
 		};
 		8F33CFC745472A151B3D82033C6D8506 /* iOS */ = {
@@ -348,7 +377,6 @@
 				5D3B77954AED70CCDAFF7B4CD3E18B16 /* SVProgressHUD+jkAdditonal.h */,
 				4C4EB44B9B46FF71795838AD062F0E4E /* SVProgressHUD+jkAdditonal.m */,
 			);
-			name = JKSVProgressHUD;
 			path = JKSVProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -380,7 +408,6 @@
 			children = (
 				9AD04E19232694D02B1921E291D2556D /* JKMacro_UIBase.h */,
 			);
-			name = JKUIMacro;
 			path = JKUIMacro;
 			sourceTree = "<group>";
 		};
@@ -431,13 +458,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F866F6F1EEEB7E494CD81D1D845C4A /* JKMacro_UIBase.h in Headers */,
+				8C73BCA01EDE6CDF008C7535 /* UIView+jkAttributedString.h in Headers */,
 				F97D2413BF8B2EE188806E7CD18CCB47 /* JKUIBaseKit-umbrella.h in Headers */,
+				8C73BC9C1EDE6C33008C7535 /* UIView+jkLine.h in Headers */,
+				8C73BCA51EDE6F67008C7535 /* JKPickerView.h in Headers */,
 				28C0E7EA8F355AD03D8906875D38C77E /* JKUIBaseKit.h in Headers */,
 				1D63B7A3146B2A6048AED7839C8E3959 /* SVProgressHUD+jkAdditonal.h in Headers */,
 				89EC0C00EE92DF541A534917B852B954 /* UIColor+jkHEX.h in Headers */,
 				FBB7B0EFDB852B0577AAC5372381EA4C /* UIImage+jkAddition.h in Headers */,
 				A4C701FE2C6FE6FC25E3BD14CC196BF5 /* UILabel+jkAdd.h in Headers */,
 				CCB32C7D8C3BEAA1C3D172B5F2CB4C03 /* UINavigationController+jkAddition.h in Headers */,
+				8C73BC981EDE6C1F008C7535 /* UITextView+jkPlaceholder.h in Headers */,
 				C9A59F78CEF8F9241AC983FE3C45F0C6 /* UISearchBar+jkStyle.h in Headers */,
 				B54DA79BEF74938434502B6AD2A8226F /* UIView+jkAdditional.h in Headers */,
 			);
@@ -566,11 +597,15 @@
 				B6AC4A8C4C90567B3813850291030558 /* JKUIBaseKit-dummy.m in Sources */,
 				49D69EF38AD9A187A5BB9647CCF166C4 /* SVProgressHUD+jkAdditonal.m in Sources */,
 				479EA961CB66E3D85BC828E6C99C0BD5 /* UIColor+jkHEX.m in Sources */,
+				8C73BCA11EDE6CDF008C7535 /* UIView+jkAttributedString.m in Sources */,
+				8C73BC991EDE6C1F008C7535 /* UITextView+jkPlaceholder.m in Sources */,
 				0CF5005408EE459301D84ED23C616A0A /* UIImage+jkAddition.m in Sources */,
 				917404F7680C79955DBC63F055E18140 /* UILabel+jkAdd.m in Sources */,
+				8C73BCA61EDE6F67008C7535 /* JKPickerView.m in Sources */,
 				2214DC9DF36F75F4CE0678912B90A92A /* UINavigationController+jkAddition.m in Sources */,
 				083ECBA0CC46DD4D8FA2FCED6AF4B55B /* UISearchBar+jkStyle.m in Sources */,
 				AFAE5D99CAC7D7984948BD73FD2D32A6 /* UIView+jkAdditional.m in Sources */,
+				8C73BC9D1EDE6C33008C7535 /* UIView+jkLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

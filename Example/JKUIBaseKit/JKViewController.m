@@ -23,7 +23,6 @@
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapFun)];
     [self.view addGestureRecognizer:tap];
     
-    [self.navigationController navigationGoBackButton:@"a"];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
