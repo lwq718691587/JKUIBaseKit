@@ -15,7 +15,11 @@
 #import "UIView+jkAdditional.h"
 #import "JKMacro_UIBase.h"
 #import "UINavigationController+jkAddition.h"
-
+#import "UIView+jkLine.h"
+#import "UIView+jkAttributedString.h"
+#import "UITextView+jkPlaceholder.h"
+#import "UISearchBar+jkStyle.h"
+#import "UILabel+jkAdd.h"
 #endif /* JKUIBaseKit_h */
 
 
