@@ -16,31 +16,44 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 @implementation UINavigationController(jkAddition)
 
 /// Content:  UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem
-- (void) navigationGoBackButton:(id _Nonnull) content {
-    [self navigationButton:self content:@[content] event:@[@"goBackEvent"] isRight:false];
+- (void) navigationGoBackButton:(UIViewController *_Nonnull) viewController
+                        content:(id _Nonnull) content{
+    [self navigationButton:viewController contents:@[content] events:@[@"goBackEvent:"] isRight:false isDefault:true];
 }
 
-- (void) navigationLeftButton:(id _Nonnull) content event:(NavigationButtonEvent _Nullable) buttonEventBlcok{
+- (void) navigationLeftButton:(UIViewController *_Nonnull) viewController
+                      content: (id _Nonnull) content
+                        event:(NavigationButtonEvent _Nullable) buttonEventBlcok{
     objc_setAssociatedObject(self, jkLeftButtonPropertyKey, buttonEventBlcok, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self navigationButton:self content:@[content] event:@[@"blockEvent"] isRight:false];
+    [self navigationButton:viewController contents:@[content] events:@[@"blockEvent:"] isRight:false isDefault:true];
 }
 
-- (void) navigationRightButton:(id _Nonnull) content event:(NavigationButtonEvent _Nullable) buttonEventBlcok{
-    objc_setAssociatedObject(self, jkLeftButtonPropertyKey, buttonEventBlcok, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    [self navigationButton:self content:@[content] event:@[@"blockEvent"] isRight:true];
+- (void) navigationRightButton:(UIViewController *_Nonnull) viewController
+                       content:(id _Nonnull) content
+                         event:(NavigationButtonEvent _Nullable) buttonEventBlcok{
+    objc_setAssociatedObject(self, jkRightButtonPropertyKey, buttonEventBlcok, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self navigationButton:viewController contents:@[content] events:@[@"blockEvent:"] isRight:true isDefault:true];
 }
 
 
 /// SEL 名字 @selector(SELString)
-- (void) navigationLeftsButton:(NSArray<id> * _Nonnull) contentArray event:(NSArray<NSString *> * _Nullable) SELStringArray {
-    [self navigationButton:self.navigationController.visibleViewController content:contentArray event:SELStringArray isRight:false];
+- (void) navigationLeftButtons:(UIViewController *_Nonnull) viewController
+                      contents:(NSArray<id> * _Nonnull) contentArray
+                        events:(NSArray<NSString *> * _Nullable) SELStringArray {
+    [self navigationButton:viewController contents:contentArray events:SELStringArray isRight:false isDefault:false];
 }
 
-- (void) navigationRightsButton:(NSArray<id> * _Nonnull) contentArray event:(NSArray<NSString *> * _Nullable) SELStringArray {
-    [self navigationButton:self.navigationController.visibleViewController content:contentArray event:SELStringArray isRight:true];
+- (void) navigationRightButtons:(UIViewController *_Nonnull) viewController
+                       contents:(NSArray<id> * _Nonnull) contentArray
+                         events:(NSArray<NSString *> * _Nullable) SELStringArray {
+    [self navigationButton:viewController contents:contentArray events:SELStringArray isRight:true isDefault:false];
 }
 
-- (void) navigationButton:(id _Nonnull) target  content:(NSArray<id> * _Nonnull) contentArray event:(NSArray<NSString *> * _Nullable) SELStringArray isRight:(BOOL) isRight {
+- (void) navigationButton:(UIViewController * _Nonnull) viewController
+                 contents:(NSArray<id> * _Nonnull) contentArray
+                   events:(NSArray<NSString *> * _Nullable) SELStringArray
+                  isRight:(BOOL) isRight
+                isDefault:(BOOL) isDefault {
     
     NSMutableArray<UIBarButtonItem *> *barButtonArray = [NSMutableArray<UIBarButtonItem *> array];
     for (int i = 0; i < [contentArray count]; i ++) {
@@ -57,7 +70,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
                 button.titleLabel.font = [UIFont systemFontOfSize:14];
             }
             if ([content isKindOfClass:[UIImage class]]) {
-                [button setImage:[UIImage imageNamed:content] forState:UIControlStateNormal];
+                [button setImage:content forState:UIControlStateNormal];
             }
             if ([content isKindOfClass:[NSAttributedString class]]) {
                 [button setAttributedTitle:content forState:UIControlStateNormal];
@@ -68,9 +81,9 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
                 action = NSSelectorFromString(SELStringArray[i]);
             }
             
-            [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+            [button addTarget:isDefault ? self : viewController action:action forControlEvents:UIControlEventTouchUpInside];
             [barButtonArray addObject:[[UIBarButtonItem alloc] initWithCustomView:button]];
-
+            
         } else if ([content isKindOfClass:[UIButton class]]) {
             [barButtonArray addObject:[[UIBarButtonItem alloc] initWithCustomView:content]];
         } else if ([content isKindOfClass:[UIBarButtonItem class]]){
@@ -79,9 +92,9 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     }
     
     if (isRight) {
-        self.navigationItem.rightBarButtonItems = barButtonArray;
+        viewController.navigationItem.rightBarButtonItems = barButtonArray;
     } else {
-        self.navigationItem.leftBarButtonItems = barButtonArray;
+        viewController.navigationItem.leftBarButtonItems = barButtonArray;
     }
 }
 
