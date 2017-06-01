@@ -10,4 +10,8 @@
 
 @interface UIView(jkLine)
 
+- (CAShapeLayer *) lineLayer;
+
+- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color;
+
 @end

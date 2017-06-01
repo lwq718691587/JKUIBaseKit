@@ -11,6 +11,7 @@ s.requires_arc = true
 s.ios.deployment_target = '8.0'
 
 s.dependency 'SVProgressHUD'
+#s.dependency 'Masonry'
 
 s.source_files = 'JKUIBaseKit/**/*'
 
