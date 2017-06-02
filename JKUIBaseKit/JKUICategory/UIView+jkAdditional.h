@@ -151,6 +151,12 @@
  */
 - (void)backgroundColorAnimationOnlayerColor:(UIColor *)color toColor:(UIColor *)toColor;
 
+/**
+ *  加载与类名相同名字的XIB文件
+ *
+ *  @return 返回一个视图对象
+ */
++ (id)loadFromXib;
 
 
 - (UIView *)findViewWithClassName:(NSString *)aName;
