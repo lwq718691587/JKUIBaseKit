@@ -8,13 +8,13 @@
 
 #import "SVProgressHUD+jkAdditonal.h"
 #import "SVProgressHUD.h"
+#import "JKMacro_UIBase.h"
 
 
-#define KeyWindow  [[UIApplication sharedApplication] keyWindow]
 @implementation SVProgressHUD (jkAdditonal)
 
 + (void)jk_show{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.frame.size.width/2, KeyWindow.frame.size.height/2)];
+    [SVProgressHUD setContainerView:jkKeyWindow];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
@@ -26,7 +26,7 @@
 }
 
 + (void)jk_showSuccessWithStatus:(NSString *)status{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.frame.size.width/2, KeyWindow.frame.size.height/2)];
+    [SVProgressHUD setContainerView:jkKeyWindow];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];
@@ -35,7 +35,7 @@
 }
 
 + (void)jk_showErrorWithStatus:(NSString *)status{
-    [SVProgressHUD setOffsetFromCenter:UIOffsetMake(KeyWindow.frame.size.width/2, KeyWindow.frame.size.height/2)];
+    [SVProgressHUD setContainerView:jkKeyWindow];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeFlat];

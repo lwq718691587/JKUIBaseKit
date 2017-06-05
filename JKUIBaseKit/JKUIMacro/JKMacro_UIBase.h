@@ -27,5 +27,10 @@
 #define jkRGBA(r,g,b,a)                           [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:a]
 #define jkRGB(r, g, b)                            [UIColor colorWithRed:(float)r/255.0f green:(float)g/255.0f blue:(float)b/255.0f alpha:1.0f]
 
+//错误提示
+#define AlertError(msg)                         [SVProgressHUD jk_showErrorWithStatus:msg]
+//成功提示
+#define AlertSuccess(msg)                       [SVProgressHUD jk_showSuccessWithStatus:msg]
+
 
 #endif /* JKMacro_UIBase_h */
