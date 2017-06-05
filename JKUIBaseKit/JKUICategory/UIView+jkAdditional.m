@@ -313,7 +313,7 @@
     return nil;
 }
 
-+(id)loadFromXib
++(id)jkLoadFromXib
 {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:self options:nil]lastObject];
 }

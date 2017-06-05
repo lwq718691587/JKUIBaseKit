@@ -156,7 +156,7 @@
  *
  *  @return 返回一个视图对象
  */
-+ (id)loadFromXib;
++ (id)jkLoadFromXib;
 
 
 - (UIView *)findViewWithClassName:(NSString *)aName;
