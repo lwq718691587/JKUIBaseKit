@@ -7,7 +7,7 @@
 //
 
 #import "JKPickerView.h"
-#import "JKUIBaseKit.h"
+#import "JKMacro_UIBase.h"
 
 
 @interface JKPickerView () <UIPickerViewDelegate, UIPickerViewDataSource>
