@@ -5,6 +5,7 @@
 //  Created by A on 2017/5/31.
 //
 //
+//  UITextView支持placeholder
 
 #import <UIKit/UIKit.h>
 

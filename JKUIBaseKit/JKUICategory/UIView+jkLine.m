@@ -19,7 +19,6 @@ static const void * lineLayerKey = &lineLayerKey;
     if (lineLayer == nil) {
         lineLayer = [[CAShapeLayer alloc] init];
         lineLayer.position      = CGPointMake(0, 0);
-        lineLayer.lineWidth     = 1;
         
         objc_setAssociatedObject(self, lineLayerKey, lineLayer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
@@ -30,8 +29,13 @@ static const void * lineLayerKey = &lineLayerKey;
 }
 
 - (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color {
+    [self drawline:rect color:color lineWidth:1];
+}
+
+- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color lineWidth:(CGFloat) lineWidth {
     self.lineLayer.path = [UIBezierPath bezierPathWithRect:rect].CGPath;
     self.lineLayer.fillColor = color.CGColor;
+    self.lineLayer.lineWidth = lineWidth;
     
     return self.lineLayer;
 }
