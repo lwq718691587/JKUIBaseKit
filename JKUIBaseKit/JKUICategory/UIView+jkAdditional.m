@@ -319,6 +319,11 @@
 }
 
 
++ (id)jkPodLoadFromXib{
+
+    return [[[NSBundle bundleForClass:self] loadNibNamed:NSStringFromClass(self) owner:self options:nil] lastObject];
+}
+
 + (CGFloat)factorForiPhone5Width{
     return (CGFloat)320 / 375;
 }

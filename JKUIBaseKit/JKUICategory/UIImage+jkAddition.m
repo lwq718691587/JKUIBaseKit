@@ -14,6 +14,26 @@
 CGFloat DegreesToRadians_lwq(CGFloat degrees) {return degrees * M_PI / 180;};
 CGFloat RadiansToDegrees_lwq(CGFloat radians) {return radians * 180/M_PI;};
 
+
+
++ (UIImage *)jkImageName:(NSString *)imageName withClass:(id)boundClass bundleName:(NSString *)bundleName {
+    
+    NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle bundleForClass:[boundClass class]] URLForResource:bundleName withExtension:@"bundle"]];
+    
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_8_0
+    return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+#elif __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_8_0
+    return [UIImage imageWithContentsOfFile:[[bundle resourcePath]stringByAppendingPathComponent:imageName]];
+#else
+    if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)]) {
+        return [UIImage imageNamed:imageName inBundle:bundle compatibleWithTraitCollection:nil];
+    } else {
+        return [UIImage imageWithContentsOfFile:[[bundle resourcePath]stringByAppendingPathComponent:imageName]];
+    }
+#endif
+}
+
+
 + (UIImage *)grabScreenWithScale:(CGFloat)scale
 {
     UIWindow *screenWindow = [[UIApplication sharedApplication] keyWindow];

@@ -10,6 +10,9 @@
 
 @interface UIImage (Addition)
 
+
++ (UIImage *)jkImageName:(NSString *)imageName withClass:(id)boundClass bundleName:(NSString *)bundleName;
+
 /**
  *  抓取屏幕。
  *  @param  scale:屏幕放大倍数，1为原尺寸。

@@ -11,6 +11,21 @@
 @interface UIView (jkAdditional)
 
 /**
+ *  加载与类名相同名字的XIB文件
+ *
+ *  @return 返回一个视图对象
+ */
++ (id)jkLoadFromXib;
+
+/**
+ 加载与类名相同名字的XIB文件 加载pod的xib
+
+ @return <#return value description#>
+ */
++ (id)jkPodLoadFromXib;
+
+
+/**
  * Shortcut for frame.origin.x.
  *
  * Sets frame.origin.x = left
@@ -151,12 +166,7 @@
  */
 - (void)backgroundColorAnimationOnlayerColor:(UIColor *)color toColor:(UIColor *)toColor;
 
-/**
- *  加载与类名相同名字的XIB文件
- *
- *  @return 返回一个视图对象
- */
-+ (id)jkLoadFromXib;
+
 
 
 - (UIView *)findViewWithClassName:(NSString *)aName;
