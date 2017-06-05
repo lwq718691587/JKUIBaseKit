@@ -16,12 +16,12 @@
 #import "UIColor+jkHEX.h"
 #import "UIImage+jkAddition.h"
 #import "UILabel+jkAdd.h"
-#import "UINavigationController+jkAddition.h"
 #import "UISearchBar+jkStyle.h"
 #import "UITextView+jkPlaceholder.h"
 #import "UIView+jkAdditional.h"
 #import "UIView+jkAttributedString.h"
 #import "UIView+jkLine.h"
+#import "UIViewController+jkAddition.h"
 #import "JKMacro_UIBase.h"
 
 FOUNDATION_EXPORT double JKUIBaseKitVersionNumber;
