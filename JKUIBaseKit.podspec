@@ -30,7 +30,7 @@ ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"
 end
 
 s.subspec 'JKUI' do |ss|
-s.dependency = 'JKUIBaseKit/JKUIMacro'
+ss.dependency = 'JKUIBaseKit/JKUIMacro'
 ss.source_files = "JKUIBaseKit/JKUI","*.{h,m}"
 end
 
