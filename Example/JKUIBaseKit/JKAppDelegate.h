@@ -5,8 +5,6 @@
 //  Created by liuweiqiang on 05/26/2017.
 //  Copyright (c) 2017 liuweiqiang. All rights reserved.
 //
-
-
 //s.public_header_files = 'JKUIBaseKit/JKUIBaseKit.h'
 //s.source_files = 'JKUIBaseKit/JKUIBaseKit.h'
 //
@@ -15,6 +13,8 @@
 //end
 //
 //s.subspec 'JKSVProgressHUD' do |ss|
+//
+//ss.dependency 'JKUIBaseKit/JKUIMacro'
 //ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"
 //end
 //
