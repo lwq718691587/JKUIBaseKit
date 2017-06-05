@@ -16,27 +16,7 @@ s.dependency 'SVProgressHUD'
 #s.source_files = 'JKUIBaseKit/**/*'
 
 
-s.public_header_files = 'JKUIBaseKit/JKUIBaseKit.h'
 
-s.source_files = 'JKUIBaseKit/JKUIBaseKit.h'
-
-
-s.subspec 'JKUIMacro' do |ss|
-ss.source_files = "JKUIBaseKit/JKUIMacro","*.{h,m}"
-end
-
-s.subspec 'JKSVProgressHUD' do |ss|
-ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"
-end
-
-s.subspec 'JKUI' do |ss|
-ss.dependency = 'JKUIBaseKit/JKUIMacro'
-ss.source_files = "JKUIBaseKit/JKUI","*.{h,m}"
-end
-
-s.subspec 'JKUICategory' do |ss|
-ss.source_files = "JKUIBaseKit/JKUICategory","*.{h,m}"
-end
 
 
 
