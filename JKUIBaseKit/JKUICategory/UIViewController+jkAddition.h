@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^NavigationButtonEvent)(void);
+typedef void(^NavigationButtonEvent)(UIButton *_Nonnull);
 
 @interface UIViewController(jkAddition)
 

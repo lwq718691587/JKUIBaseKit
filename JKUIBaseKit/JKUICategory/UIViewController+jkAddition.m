@@ -102,7 +102,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 
 - (void) blockEvent:(UIButton *) buttonEvent {
     NavigationButtonEvent  navigationButtonEventBlock = objc_getAssociatedObject(self, (buttonEvent.tag == 0 ? jkLeftButtonPropertyKey : jkRightButtonPropertyKey));
-    if (navigationButtonEventBlock) navigationButtonEventBlock();
+    if (navigationButtonEventBlock) navigationButtonEventBlock(buttonEvent);
 }
 
 @end
