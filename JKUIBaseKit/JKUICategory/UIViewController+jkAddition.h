@@ -10,8 +10,40 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^NavigationButtonEvent)(UIButton *_Nonnull);
-
+typedef NS_ENUM(NSInteger, Navtiontype) {
+    BarButton_Left = 0,
+    BarButton_Right
+};
 @interface UIViewController(jkAddition)
+
+
+/**
+ 用一个label 作为一个 标题
+ 
+ @param title 标题
+ @param color 颜色
+ @param font 字体
+ */
+- (void)setNavTitle:(NSString * _Nonnull)title
+              color:(UIColor *_Nonnull)color
+               font:(UIFont *_Nonnull)font;
+
+/**
+ 创建导航栏左右btn
+ 
+ @param title 标题
+ @param imageName 图片名字
+ @param color 字体颜色
+ @param font 字体
+ @param action 相应事件
+ @param type 左 或 右
+ */
+- (void)creatNavigationBarButton:(NSString *_Nonnull)title
+             backgroundImageName:(NSString *_Nonnull)imageName
+                      titleColor:(UIColor *_Nonnull)color
+                       titleFont:(UIFont *_Nonnull)font
+                          action:(SEL _Nonnull)action
+                            type:(Navtiontype)type;
 
 /**
  *  返回按钮
