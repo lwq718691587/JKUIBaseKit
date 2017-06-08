@@ -19,7 +19,7 @@
 #import "UISearchBar+jkStyle.h"
 #import "UILabel+jkAdd.h"
 #import "UIViewController+jkAddition.h"
-
+#import "UINavigationController+jkAdditional.h"
 
 #import "JKMacro_UIBase.h"
 
