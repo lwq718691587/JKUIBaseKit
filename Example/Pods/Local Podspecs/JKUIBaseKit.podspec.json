@@ -1,6 +1,6 @@
 {
   "name": "JKUIBaseKit",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "license": "MIT",
   "summary": "Simple APP Kit",
   "homepage": "https://github.com/lwq718691587/JKUIBaseKit",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKUIBaseKit.git",
-    "tag": "0.1.2"
+    "tag": "0.1.4"
   },
   "requires_arc": true,
   "platforms": {
@@ -20,5 +20,51 @@
 
     ]
   },
-  "source_files": "JKUIBaseKit/**/*"
+  "public_header_files": "JKUIBaseKit/JKUIBaseKit.h",
+  "source_files": "JKUIBaseKit/JKUIBaseKit.h",
+  "subspecs": [
+    {
+      "name": "JKUIMacro",
+      "source_files": [
+        "JKUIBaseKit/JKUIMacro",
+        "*.{h,m}"
+      ]
+    },
+    {
+      "name": "JKSVProgressHUD",
+      "dependencies": {
+        "JKUIBaseKit/JKUIMacro": [
+
+        ]
+      },
+      "source_files": [
+        "JKUIBaseKit/JKSVProgressHUD",
+        "*.{h,m}"
+      ]
+    },
+    {
+      "name": "JKUI",
+      "dependencies": {
+        "JKUIBaseKit/JKUIMacro": [
+
+        ]
+      },
+      "source_files": [
+        "JKUIBaseKit/JKUI",
+        "*.{h,m}"
+      ]
+    },
+    {
+      "name": "JKUICategory",
+      "dependencies": {
+        "JKUIBaseKit/JKUIMacro": [
+
+        ]
+      },
+      "source_files": [
+        "JKUIBaseKit/JKUICategory",
+        "*.{h,m}"
+      ]
+    }
+  ]
 }

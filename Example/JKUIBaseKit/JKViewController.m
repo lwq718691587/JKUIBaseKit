@@ -19,7 +19,6 @@
 {
     [super viewDidLoad];
     
-    
     UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapFun)];
     [self.view addGestureRecognizer:tap];
     

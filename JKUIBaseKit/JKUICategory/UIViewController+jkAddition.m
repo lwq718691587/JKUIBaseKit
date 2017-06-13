@@ -20,8 +20,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 
 - (void)setNavTitle:(NSString * _Nonnull)title
               color:(UIColor *_Nonnull)color
-               font:(UIFont *_Nonnull)font
-{
+               font:(UIFont *_Nonnull)font {
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, jkScreenWidth, 44)];
     titleView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     titleView.autoresizesSubviews = YES;
@@ -69,8 +68,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
                       titleColor:(UIColor *_Nonnull)color
                        titleFont:(UIFont *_Nonnull)font
                           action:(SEL _Nonnull)action
-                            type:(Navtiontype)type
-{
+                            type:(Navtiontype)type {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 44, 44);
     if(title){
@@ -148,7 +146,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
                 [button setAttributedTitle:content forState:UIControlStateNormal];
             }
             
-            SEL action = nil;
+            SEL action = @selector(nilEvent:);
             if (SELStringArray.count > i) {
                 action = NSSelectorFromString(SELStringArray[i]);
             }
@@ -170,10 +168,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     }
 }
 
-
-
 #pragma mark - NavigationGoBackButtonEvent
-
 - (void) goBackEvent:(UIButton *) buttonEvent {
     [self.navigationController popViewControllerAnimated:true];
 }
@@ -181,6 +176,10 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 - (void) blockEvent:(UIButton *) buttonEvent {
     NavigationButtonEvent  navigationButtonEventBlock = objc_getAssociatedObject(self, (buttonEvent.tag == 0 ? jkLeftButtonPropertyKey : jkRightButtonPropertyKey));
     if (navigationButtonEventBlock) navigationButtonEventBlock(buttonEvent);
+}
+
+- (void) nilEvent:(UIButton *) buttonEvetn {
+    NSLog(@"未有对应的点击事件");
 }
 
 @end
