@@ -319,9 +319,10 @@
 }
 
 
-+ (id)jkPodLoadFromXib{
++ (id)jkPodLoadFromXibWithBundleName:(NSString *)bundleName{
 
-    return [[[NSBundle bundleForClass:self] loadNibNamed:NSStringFromClass(self) owner:self options:nil] lastObject];
+    NSBundle *b= [NSBundle bundleWithURL:[[NSBundle bundleForClass:[self class]] URLForResource:bundleName withExtension:@"bundle"]];
+    return [[b loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
 }
 
 + (CGFloat)factorForiPhone5Width{

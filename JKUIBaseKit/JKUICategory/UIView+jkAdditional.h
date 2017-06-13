@@ -22,7 +22,7 @@
 
  @return <#return value description#>
  */
-+ (id)jkPodLoadFromXib;
++ (id)jkPodLoadFromXibWithBundleName:(NSString *)bundleName;
 
 
 /**
