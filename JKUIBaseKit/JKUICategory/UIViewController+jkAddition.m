@@ -21,46 +21,14 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 - (void)setNavTitle:(NSString * _Nonnull)title
               color:(UIColor *_Nonnull)color
                font:(UIFont *_Nonnull)font {
-    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, jkScreenWidth, 44)];
-    titleView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    titleView.autoresizesSubviews = YES;
-    titleView.backgroundColor = [UIColor clearColor];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, jkScreenWidth, 44)];
+    UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = color;
     titleLabel.font = font;
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
-    titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    titleLabel.autoresizingMask = titleView.autoresizingMask;
-    
-    CGSize size = [titleLabel.text boundingRectWithSize:CGSizeMake(MAXFLOAT, 44)
-                              options:NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
-                           attributes:[NSDictionary dictionaryWithObjectsAndKeys:font,NSFontAttributeName, nil]
-                              context:NULL].size;
-    CGFloat width = size.width;
-    //        CGFloat width = 100;
-    CGFloat maxWidth = 120;
-    if(width <= jkScreenWidth-2*maxWidth){
-        titleLabel.frame = CGRectMake(0, 0, jkScreenWidth-maxWidth*2, 44);
-        titleView.frame = CGRectMake(maxWidth, 0, jkScreenWidth-maxWidth*2, 44);
-    }else{
-        CGRect leftViewbounds = self.navigationItem.leftBarButtonItem.customView.bounds;
-        CGRect rightViewbounds = self.navigationItem.rightBarButtonItem.customView.bounds;
-        CGRect frame;
-        CGFloat maxWidth = leftViewbounds.size.width > rightViewbounds.size.width ? leftViewbounds.size.width : rightViewbounds.size.width;
-        maxWidth += 15;
-        frame = titleLabel.frame;
-        frame.size.width = jkScreenWidth - maxWidth * 2;
-        titleLabel.frame = frame;
-        
-        frame = titleView.frame;
-        frame.size.width = jkScreenWidth - maxWidth * 2;
-        titleView.frame = frame;
-    }
     titleLabel.text = title;
-    [titleView addSubview:titleLabel];
-    self.navigationItem.titleView = titleView;
+    [titleLabel sizeToFit];
+    self.navigationItem.titleView = titleLabel;
 }
 
 - (void)creatNavigationBarButton:(NSString *_Nonnull)title
