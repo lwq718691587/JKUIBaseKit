@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKUIBaseKit'
-s.version = '0.1.5'
+s.version = '0.1.6'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKUIBaseKit'
