@@ -41,8 +41,8 @@
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithAttributedString: [self la_getAttributedString]];
     {
         NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-        paragraphStyle.paragraphSpacing = space;
-        paragraphStyle.alignment        = NSTextAlignmentJustified;
+        paragraphStyle.lineSpacing = space;
+        paragraphStyle.alignment   = NSTextAlignmentJustified;
         
         [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range.length  == 0 ? NSMakeRange(0, attributedString.length) : range];
     }
