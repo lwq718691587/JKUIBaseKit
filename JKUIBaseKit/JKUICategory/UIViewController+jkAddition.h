@@ -45,6 +45,18 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
                           action:(SEL _Nonnull)action
                             type:(Navtiontype)type;
 
+
+/**
+ 设置返回按钮
+
+ @param image 返回按钮的图片
+ @param leftMargin 距左端的距离 一般为负数
+ @param action 返回的方法
+ */
+-(void)setBackArrowImage:(UIImage *_Nullable)image
+              leftMargin:(CGFloat)leftMargin
+                  action:(SEL _Nullable )action;
+
 /**
  *  返回按钮
  *

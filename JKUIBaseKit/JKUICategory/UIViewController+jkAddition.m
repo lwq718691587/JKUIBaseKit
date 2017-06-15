@@ -59,6 +59,18 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     }
 }
 
+-(void)setBackArrowImage:(UIImage *)image leftMargin:(CGFloat)leftMargin action:(SEL )action{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.exclusiveTouch = YES;
+    [button setImage:image forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 0, 44, 44);
+    [button setImageEdgeInsets:UIEdgeInsetsMake(0, leftMargin, 0, 0)];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    button.backgroundColor = [UIColor clearColor];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+}
+
+
 
 /// Content:  UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem
 - (void) navigationGoBackButton:(id _Nonnull) content{
