@@ -29,7 +29,7 @@ static const void * lineLayerKey = &lineLayerKey;
 }
 
 - (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color {
-    [self drawline:rect color:color lineWidth:1];
+    return [self drawline:rect color:color lineWidth:1];
 }
 
 - (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color lineWidth:(CGFloat) lineWidth {
