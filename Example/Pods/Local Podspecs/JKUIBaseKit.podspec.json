@@ -1,6 +1,6 @@
 {
   "name": "JKUIBaseKit",
-  "version": "0.1.4",
+  "version": "0.2.1",
   "license": "MIT",
   "summary": "Simple APP Kit",
   "homepage": "https://github.com/lwq718691587/JKUIBaseKit",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/lwq718691587/JKUIBaseKit.git",
-    "tag": "0.1.4"
+    "tag": "0.2.1"
   },
   "requires_arc": true,
   "platforms": {
@@ -39,18 +39,6 @@
       },
       "source_files": [
         "JKUIBaseKit/JKSVProgressHUD",
-        "*.{h,m}"
-      ]
-    },
-    {
-      "name": "JKUI",
-      "dependencies": {
-        "JKUIBaseKit/JKUIMacro": [
-
-        ]
-      },
-      "source_files": [
-        "JKUIBaseKit/JKUI",
         "*.{h,m}"
       ]
     },

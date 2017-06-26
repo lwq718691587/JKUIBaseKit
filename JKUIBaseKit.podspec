@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKUIBaseKit'
-s.version = '0.2.0'
+s.version = '0.2.1'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKUIBaseKit'
@@ -27,13 +27,7 @@ ss.dependency 'JKUIBaseKit/JKUIMacro'
 ss.source_files = "JKUIBaseKit/JKSVProgressHUD","*.{h,m}"
 end
 
-s.subspec 'JKUI' do |ss|
 
-ss.dependency 'JKUIBaseKit/JKUIMacro'
-
-ss.source_files = "JKUIBaseKit/JKUI","*.{h,m}"
-
-end
 
 s.subspec 'JKUICategory' do |ss|
 ss.dependency 'JKUIBaseKit/JKUIMacro'
