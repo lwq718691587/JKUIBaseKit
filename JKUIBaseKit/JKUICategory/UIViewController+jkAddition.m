@@ -38,7 +38,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
                           action:(SEL _Nonnull)action
                             type:(Navtiontype)type {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 0, 44, 44);
+    button.frame = CGRectMake(0, 0, 80, 44);
     if(title){
         [button setTitle:title forState:UIControlStateNormal];
         button.titleLabel.font = font;
@@ -48,6 +48,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
         [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     }
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [button sizeToFit];
     UIBarButtonItem *butItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     if (type == BarButton_Left) {
         self.navigationItem.leftBarButtonItem = butItem;
