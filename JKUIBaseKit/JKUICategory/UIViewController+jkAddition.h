@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  @param type 左 或 右
  */
 - (void)creatNavigationBarButton:(NSString *_Nonnull)title
-             backgroundImageName:(UIImage *_Nonnull)image
+                           image:(UIImage *_Nonnull)image
                       titleColor:(UIColor *_Nonnull)color
                        titleFont:(UIFont *_Nonnull)font
                           action:(SEL _Nonnull)action

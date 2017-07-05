@@ -32,11 +32,11 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 }
 
 - (void)creatNavigationBarButton:(NSString *_Nonnull)title
-             backgroundImageName:(UIImage *_Nonnull)image
+                           image:(UIImage *_Nonnull)image
                       titleColor:(UIColor *_Nonnull)color
                        titleFont:(UIFont *_Nonnull)font
                           action:(SEL _Nonnull)action
-                            type:(Navtiontype)type {
+                            type:(Navtiontype)type;{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 80, 44);
     if(title){
