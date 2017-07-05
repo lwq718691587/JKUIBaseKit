@@ -32,7 +32,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 }
 
 - (void)creatNavigationBarButton:(NSString *_Nonnull)title
-             backgroundImageName:(NSString *_Nonnull)imageName
+             backgroundImageName:(UIImage *_Nonnull)image
                       titleColor:(UIColor *_Nonnull)color
                        titleFont:(UIFont *_Nonnull)font
                           action:(SEL _Nonnull)action
@@ -44,8 +44,8 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
         button.titleLabel.font = font;
         [button setTitleColor:color forState:UIControlStateNormal];
     }
-    if (imageName) {
-        [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    if (image) {
+        [button setImage:image forState:UIControlStateNormal];
     }
     [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
     [button sizeToFit];

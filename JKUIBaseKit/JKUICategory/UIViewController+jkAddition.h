@@ -32,14 +32,14 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  创建导航栏左右btn
  
  @param title 标题
- @param imageName 图片名字
+ @param image 图片
  @param color 字体颜色
  @param font 字体
  @param action 相应事件
  @param type 左 或 右
  */
 - (void)creatNavigationBarButton:(NSString *_Nonnull)title
-             backgroundImageName:(NSString *_Nonnull)imageName
+             backgroundImageName:(UIImage *_Nonnull)image
                       titleColor:(UIColor *_Nonnull)color
                        titleFont:(UIFont *_Nonnull)font
                           action:(SEL _Nonnull)action
