@@ -325,6 +325,10 @@
     return [[b loadNibNamed:NSStringFromClass([self class]) owner:self options:nil] lastObject];
 }
 
++(NSString*)jkCellIdentifier{
+    return NSStringFromClass(self);
+}
+
 + (CGFloat)factorForiPhone5Width{
     return (CGFloat)320 / 375;
 }

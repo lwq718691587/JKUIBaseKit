@@ -24,6 +24,12 @@
  */
 + (id)jkPodLoadFromXibWithBundleName:(NSString *)bundleName;
 
+/**
+ *  用代码创建Cell时候设置的cellIdentifier
+ *
+ *  @return cellIdentifier;
+ */
++ (NSString*)jkCellIdentifier;
 
 /**
  * Shortcut for frame.origin.x.

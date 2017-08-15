@@ -1,19 +1,19 @@
 PODS:
-  - JKUIBaseKit (0.2.6):
-    - JKUIBaseKit/JKCustomUI (= 0.2.6)
-    - JKUIBaseKit/JKSVProgressHUD (= 0.2.6)
-    - JKUIBaseKit/JKUICategory (= 0.2.6)
-    - JKUIBaseKit/JKUIMacro (= 0.2.6)
+  - JKUIBaseKit (0.2.7):
+    - JKUIBaseKit/JKCustomUI (= 0.2.7)
+    - JKUIBaseKit/JKSVProgressHUD (= 0.2.7)
+    - JKUIBaseKit/JKUICategory (= 0.2.7)
+    - JKUIBaseKit/JKUIMacro (= 0.2.7)
     - SVProgressHUD (= 2.1.2)
-  - JKUIBaseKit/JKCustomUI (0.2.6):
+  - JKUIBaseKit/JKCustomUI (0.2.7):
     - SVProgressHUD (= 2.1.2)
-  - JKUIBaseKit/JKSVProgressHUD (0.2.6):
+  - JKUIBaseKit/JKSVProgressHUD (0.2.7):
     - JKUIBaseKit/JKUIMacro
     - SVProgressHUD (= 2.1.2)
-  - JKUIBaseKit/JKUICategory (0.2.6):
+  - JKUIBaseKit/JKUICategory (0.2.7):
     - JKUIBaseKit/JKUIMacro
     - SVProgressHUD (= 2.1.2)
-  - JKUIBaseKit/JKUIMacro (0.2.6):
+  - JKUIBaseKit/JKUIMacro (0.2.7):
     - SVProgressHUD (= 2.1.2)
   - SVProgressHUD (2.1.2)
 
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JKUIBaseKit: 6c1bff7d369a95ba982206abb7ed59d5e9e6ff68
+  JKUIBaseKit: e106f1262c0e815b81695a86f89cfe6de767c88f
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
 PODFILE CHECKSUM: 739a3bd9a66f00e6d306b0bcd2926afd06de5369
