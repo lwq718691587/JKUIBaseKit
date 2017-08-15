@@ -1,15 +1,16 @@
 //
 //  JKUIBaseKit.h
-//  test
+//  Pods
 //
-//  Created by 刘伟强 on 2017/5/25.
-//  Copyright © 2017年 刘伟强. All rights reserved.
+//  Created by 刘伟强 on 2017/8/15.
+//
 //
 
 #ifndef JKUIBaseKit_h
 #define JKUIBaseKit_h
 
 #import "SVProgressHUD+jkAdditonal.h"
+
 #import "UIColor+jkHEX.h"
 #import "UIImage+jkAddition.h"
 #import "UIView+jkAdditional.h"
@@ -20,9 +21,8 @@
 #import "UILabel+jkAdd.h"
 #import "UIViewController+jkAddition.h"
 #import "UINavigationController+jkAdditional.h"
-
+#import "JKPlaceholderTextView.h"
 #import "JKMacro_UIBase.h"
 
+
 #endif /* JKUIBaseKit_h */
-
-

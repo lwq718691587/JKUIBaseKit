@@ -1,6 +1,0 @@
-framework module JKUIBaseKit {
-  umbrella header "JKUIBaseKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

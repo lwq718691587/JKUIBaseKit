@@ -28,14 +28,12 @@ static const void * lineLayerKey = &lineLayerKey;
     return lineLayer;
 }
 
-- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color {
-    return [self drawline:rect color:color lineWidth:1];
-}
 
-- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color lineWidth:(CGFloat) lineWidth {
+- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color  {
+    
     self.lineLayer.path = [UIBezierPath bezierPathWithRect:rect].CGPath;
     self.lineLayer.fillColor = color.CGColor;
-    self.lineLayer.lineWidth = lineWidth;
+    self.lineLayer.lineWidth = CGRectGetHeight(rect);
     
     return self.lineLayer;
 }

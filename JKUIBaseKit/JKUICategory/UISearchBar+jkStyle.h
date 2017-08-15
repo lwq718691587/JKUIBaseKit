@@ -12,4 +12,5 @@
 
 // 是否居中
 -(void)setHasCentredPlaceholder:(BOOL)hasCentredPlaceholder;
+
 @end

@@ -18,9 +18,9 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 
 
 
-- (void)setNavTitle:(NSString * _Nonnull)title
-              color:(UIColor *_Nonnull)color
-               font:(UIFont *_Nonnull)font {
+- (void)setNavTitle:(NSString * )title
+              color:(UIColor *)color
+               font:(UIFont * )font {
     UILabel *titleLabel = [[UILabel alloc] init];
     titleLabel.backgroundColor = [UIColor clearColor];
     titleLabel.textColor = color;
@@ -31,11 +31,11 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     self.navigationItem.titleView = titleLabel;
 }
 
-- (void)creatNavigationBarButton:(NSString *_Nonnull)title
-                           image:(UIImage *_Nonnull)image
-                      titleColor:(UIColor *_Nonnull)color
-                       titleFont:(UIFont *_Nonnull)font
-                          action:(SEL _Nonnull)action
+- (void)creatNavigationBarButton:(NSString *)title
+                           image:(UIImage *)image
+                      titleColor:(UIColor *)color
+                       titleFont:(UIFont *)font
+                          action:(SEL )action
                             type:(Navtiontype)type;{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(0, 0, 80, 44);
@@ -74,7 +74,7 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 
 
 /// Content:  UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem
-- (void) navigationGoBackButton:(id _Nonnull) content{
+- (void) navigationGoBackButton:(id ) content{
     [self navigationButtons:@[content] events:@[@"goBackEvent:"] isRight:false];
 }
 
@@ -84,26 +84,26 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     [self navigationButtons:@[content] events:@[@"blockEvent:"] isRight:false];
 }
 
-- (void) navigationRightButton:(id _Nonnull) content
-                         event:(NavigationButtonEvent _Nullable) buttonEventBlcok{
+- (void) navigationRightButton:(id ) content
+                         event:(NavigationButtonEvent ) buttonEventBlcok{
     objc_setAssociatedObject(self, jkRightButtonPropertyKey, buttonEventBlcok, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self navigationButtons:@[content] events:@[@"blockEvent:"] isRight:true];
 }
 
 
 /// SEL 名字 @selector(SELString)
-- (void) navigationLeftButtons:(NSArray<id> * _Nonnull) contentArray
-                        events:(NSArray<NSString *> * _Nullable) SELStringArray {
+- (void) navigationLeftButtons:(NSArray<id> * ) contentArray
+                        events:(NSArray<NSString *> * ) SELStringArray {
     [self navigationButtons:contentArray events:SELStringArray isRight:false];
 }
 
-- (void) navigationRightButtons:(NSArray<id> * _Nonnull) contentArray
-                         events:(NSArray<NSString *> * _Nullable) SELStringArray {
+- (void) navigationRightButtons:(NSArray<id> * ) contentArray
+                         events:(NSArray<NSString *> * ) SELStringArray {
     [self navigationButtons:contentArray events:SELStringArray isRight:true];
 }
 
-- (void) navigationButtons:(NSArray<id> * _Nonnull) contentArray
-                    events:(NSArray<NSString *> * _Nullable) SELStringArray
+- (void) navigationButtons:(NSArray<id> * ) contentArray
+                    events:(NSArray<NSString *> * ) SELStringArray
                    isRight:(BOOL) isRight {
     
     NSMutableArray<UIBarButtonItem *> *barButtonArray = [NSMutableArray<UIBarButtonItem *> array];

@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^NavigationButtonEvent)(UIButton *_Nonnull);
+typedef void(^NavigationButtonEvent)(UIButton *);
 typedef NS_ENUM(NSInteger, Navtiontype) {
     BarButton_Left = 0,
     BarButton_Right
@@ -24,9 +24,9 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  @param color 颜色
  @param font 字体
  */
-- (void)setNavTitle:(NSString * _Nonnull)title
-              color:(UIColor *_Nonnull)color
-               font:(UIFont *_Nonnull)font;
+- (void)setNavTitle:(NSString * )title
+              color:(UIColor *)color
+               font:(UIFont *)font;
 
 /**
  创建导航栏左右btn
@@ -38,11 +38,11 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  @param action 相应事件
  @param type 左 或 右
  */
-- (void)creatNavigationBarButton:(NSString *_Nonnull)title
-                           image:(UIImage *_Nonnull)image
-                      titleColor:(UIColor *_Nonnull)color
-                       titleFont:(UIFont *_Nonnull)font
-                          action:(SEL _Nonnull)action
+- (void)creatNavigationBarButton:(NSString *)title
+                           image:(UIImage *)image
+                      titleColor:(UIColor *)color
+                       titleFont:(UIFont *)font
+                          action:(SEL )action
                             type:(Navtiontype)type;
 
 
@@ -53,9 +53,9 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  @param leftMargin 距左端的距离 一般为负数
  @param action 返回的方法
  */
--(void)setBackArrowImage:(UIImage *_Nullable)image
+-(void)setBackArrowImage:(UIImage *)image
               leftMargin:(CGFloat)leftMargin
-                  action:(SEL _Nullable )action;
+                  action:(SEL  )action;
 
 /**
  *  返回按钮
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  *  @param content 返回按钮的样式， 可以传入 UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem
  *
  */
-- (void) navigationGoBackButton:(id _Nonnull) content;
+- (void) navigationGoBackButton:(id ) content;
 
 /**
  *  左边按钮
@@ -72,11 +72,11 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  *  @param buttonEventBlcok   事件回调的Block
  *
  */
-- (void) navigationLeftButton: (id _Nonnull) content
-                        event:(NavigationButtonEvent _Nullable) buttonEventBlcok;
+- (void) navigationLeftButton: (id ) content
+                        event:(NavigationButtonEvent ) buttonEventBlcok;
 
-- (void) navigationRightButton:(id _Nonnull) content
-                         event:(NavigationButtonEvent _Nullable) buttonEventBlcok;
+- (void) navigationRightButton:(id ) content
+                         event:(NavigationButtonEvent ) buttonEventBlcok;
 
 
 /**
@@ -86,11 +86,11 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
  *  @param SELStringArray 事件方法的数组  SEL 名字 @selector(SELString)
  *
  */
-- (void) navigationLeftButtons:(NSArray<id> * _Nonnull) contentArray
-                        events:(NSArray<NSString *> * _Nullable) SELStringArray;
+- (void) navigationLeftButtons:(NSArray<id> * ) contentArray
+                        events:(NSArray<NSString *> * ) SELStringArray;
 
-- (void) navigationRightButtons:(NSArray<id> * _Nonnull) contentArray
-                         events:(NSArray<NSString *> * _Nullable) SELStringArray;
+- (void) navigationRightButtons:(NSArray<id> * ) contentArray
+                         events:(NSArray<NSString *> * ) SELStringArray;
 
 
 @end

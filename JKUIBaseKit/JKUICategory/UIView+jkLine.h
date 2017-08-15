@@ -23,6 +23,5 @@
 
 - (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color;
 
-- (CAShapeLayer *) drawline:(CGRect)rect color:(UIColor *)color lineWidth:(CGFloat) lineWidth;
 
 @end
