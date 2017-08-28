@@ -31,7 +31,9 @@
     CGFloat imageWidth = self.imageView.frame.size.width;
     
     CGFloat titleHeight = self.titleLabel.frame.size.height;
-    CGFloat titleWidth = self.titleLabel.frame.size.width;
+    
+    CGSize size = [self.currentTitle sizeWithAttributes:@{NSFontAttributeName:self.titleLabel.font}];
+    CGFloat titleWidth = size.width;
     
     CGFloat totalHeight = imageHeight + titleHeight + spacing;
     
@@ -43,7 +45,9 @@
     CGFloat imageWidth = self.imageView.frame.size.width;
     
     CGFloat titleHeight = self.titleLabel.frame.size.height;
-    CGFloat titleWidth = self.titleLabel.frame.size.width;
+    
+    CGSize size = [self.currentTitle sizeWithAttributes:@{NSFontAttributeName:self.titleLabel.font}];
+    CGFloat titleWidth = size.width;
     
     CGFloat totalHeight = imageHeight + titleHeight + spacing;
     
