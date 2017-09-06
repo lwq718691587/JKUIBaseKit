@@ -390,13 +390,4 @@
 }
 
 
--(void)jkCallPhone:(NSString *)phone{
-
-    NSMutableString *str=[[NSMutableString alloc] initWithFormat:@"tel:%@",phone];
-    UIWebView *callWebview = [[UIWebView alloc] init];
-    [callWebview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:str]]];
-    [self addSubview:callWebview];
-
-}
-
 @end

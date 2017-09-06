@@ -184,12 +184,6 @@
 + (CGFloat)Fxw:(CGFloat)xw;
 
 
-/**
- 打电话
-
- @param phone 电话号码
- */
-- (void)jkCallPhone:(NSString *)phone;
 
 @end
 
