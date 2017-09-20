@@ -15,6 +15,17 @@ CGFloat DegreesToRadians_lwq(CGFloat degrees) {return degrees * M_PI / 180;};
 CGFloat RadiansToDegrees_lwq(CGFloat radians) {return radians * 180/M_PI;};
 
 
+- (UIImage *)normalizedImage {
+    if (self.imageOrientation == UIImageOrientationUp) return self;
+    
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    [self drawInRect:(CGRect){0, 0, self.size}];
+    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalizedImage;
+}
+
+
 
 + (UIImage *)jkImageName:(NSString *)imageName withClass:(id)boundClass bundleName:(NSString *)bundleName {
     

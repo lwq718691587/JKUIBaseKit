@@ -11,6 +11,13 @@
 @interface UIImage (Addition)
 
 
+/**
+ 拍照 图片方向问题
+
+ @return <#return value description#>
+ */
+- (UIImage *)normalizedImage;
+
 + (UIImage *)jkImageName:(NSString *)imageName withClass:(id)boundClass bundleName:(NSString *)bundleName;
 
 /**
