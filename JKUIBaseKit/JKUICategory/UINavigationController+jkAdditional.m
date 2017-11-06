@@ -11,12 +11,9 @@
 
 
 -(void)setNavBackgroundImage:(UIImage *)navBackgroundImage{
-    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [[UIImage alloc] init];
     self.navigationBar.translucent  = NO;
-    UIColor *backgroundColor = [UIColor colorWithPatternImage:navBackgroundImage];
-    [self.navigationBar setBarTintColor:backgroundColor];
-    [self.navigationBar setBackgroundColor:backgroundColor];
 }
 
 - (void)setTitleColor:(UIColor *)titleColor titleFont:(UIFont *)titleFont{
