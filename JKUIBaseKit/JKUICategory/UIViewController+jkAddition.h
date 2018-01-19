@@ -93,4 +93,11 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
                          events:(NSArray<NSString *> * ) SELStringArray;
 
 
+// 进入相册 和 照相 选择器
++ (void)selectPhoto:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC;
+// 进入照相界面
++ (void)takePhoto:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC;
+// 进入相片选择界面
++ (void)goinAlbum:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC;
+
 @end

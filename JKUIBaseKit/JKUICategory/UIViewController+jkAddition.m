@@ -163,5 +163,50 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
     NSLog(@"未有对应的点击事件");
 }
 
+
++ (void)selectPhoto:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC;{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil
+                                                                             message:nil
+                                          
+                                                                      preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"取消"
+                                                           style:UIAlertActionStyleCancel
+                                                         handler:^(UIAlertAction * action) {}];
+    
+    UIAlertAction* fromPhotoAction = [UIAlertAction actionWithTitle:@"从相册选择" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        [self goinAlbum:currentVC];
+    }];
+    
+    UIAlertAction* fromCameraAction = [UIAlertAction actionWithTitle:@"相机" style:UIAlertActionStyleDefault                                                             handler:^(UIAlertAction * action) {
+        [self takePhoto:currentVC];
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:fromCameraAction];
+    [alertController addAction:fromPhotoAction];
+    
+    [currentVC presentViewController:alertController animated:YES completion:nil];
+}
+// 进入照相界面
++ (void)takePhoto:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.delegate = currentVC;
+    imagePicker.allowsEditing = NO;
+    imagePicker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    [currentVC presentViewController:imagePicker animated:YES completion:nil];
+}
+// 进入相片选择界面
++ (void)goinAlbum:(UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>*)currentVC{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    imagePicker.allowsEditing = NO;
+    imagePicker.delegate = currentVC;
+    [currentVC presentViewController:imagePicker animated:YES completion:nil];
+}
+
+
+
+
 @end
 
