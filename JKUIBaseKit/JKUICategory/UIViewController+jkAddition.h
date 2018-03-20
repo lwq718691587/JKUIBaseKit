@@ -58,6 +58,11 @@ typedef NS_ENUM(NSInteger, Navtiontype) {
                   action:(SEL  )action;
 
 /**
+ 隐藏返回按钮
+ */
+-(void)hideleftBarButtonItem;
+
+/**
  *  返回按钮
  *
  *  @param content 返回按钮的样式， 可以传入 UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem

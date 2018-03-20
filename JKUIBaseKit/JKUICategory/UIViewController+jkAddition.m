@@ -61,17 +61,15 @@ void static * const jkRightButtonPropertyKey = @"jkRightButtonPropertyKey";
 }
 
 -(void)setBackArrowImage:(UIImage *)image leftMargin:(CGFloat)leftMargin action:(SEL )action{
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.exclusiveTouch = YES;
-    [button setImage:image forState:UIControlStateNormal];
-    button.frame = CGRectMake(0, 0, 44, 44);
-    [button setImageEdgeInsets:UIEdgeInsetsMake(0, leftMargin, 0, 0)];
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
-    button.backgroundColor = [UIColor clearColor];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStyleDone target:self action:action];
+    self.navigationItem.leftBarButtonItem.imageInsets = UIEdgeInsetsMake(0, leftMargin, 0, 0);
+    
 }
 
-
+-(void)hideleftBarButtonItem{
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:[UIView new]];
+}
 
 /// Content:  UIImage, NSString, NSAttributedString, UIButton，UIBarButtonItem
 - (void) navigationGoBackButton:(id ) content{
