@@ -32,5 +32,18 @@
 //成功提示
 #define AlertSuccess(msg)                       [SVProgressHUD jk_showSuccessWithStatus:msg]
 
+//iPhone X
+#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+//状态栏高度
+#define jkStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+//安全区距离底部距离
+#define jkTabbarSafeBottomMargin    (IS_iPhoneX ? 34 :0)
+//底部按钮边距
+#define jkBottomBtnTopMargin        15
+#define jkBottomBtnLeftMargin       15
+#define jkBottomBtnBottomMargin     15
+#define jkBottomBtnRightMargin      15
+//底部按钮高度
+#define jkBottomBtnHeight           44
 
 #endif /* JKMacro_UIBase_h */
