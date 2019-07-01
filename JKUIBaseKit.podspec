@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name = 'JKUIBaseKit'
-s.version = '0.3.4'
+s.version = '0.3.5'
 s.license = 'MIT'
 s.summary = 'Simple APP Kit'
 s.homepage = 'https://github.com/lwq718691587/JKUIBaseKit'
@@ -10,7 +10,7 @@ s.source = { :git => "https://github.com/lwq718691587/JKUIBaseKit.git", :tag => 
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
 
-s.dependency 'SVProgressHUD','2.1.2'
+s.dependency 'SVProgressHUD'
 
 #s.source_files = 'JKUIBaseKit/**/*'
 
