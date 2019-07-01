@@ -19,6 +19,7 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "JKUIBaseKit"
 ```
+SV 最初稳定版本2.1.2
 
 ## Author
 

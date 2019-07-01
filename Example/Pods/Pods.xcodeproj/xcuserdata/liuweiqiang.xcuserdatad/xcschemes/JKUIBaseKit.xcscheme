@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '18B23C311AE4D62F12DBFA9BD564393A'
-               BlueprintName = 'JKUIBaseKit'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libJKUIBaseKit.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5DE56AD2002254DED79F3F46BCBBC733"
+               BuildableName = "libJKUIBaseKit.a"
+               BlueprintName = "JKUIBaseKit"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
