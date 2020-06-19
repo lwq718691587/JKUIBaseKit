@@ -60,6 +60,24 @@
         "JKUIBaseKit/JKCustomUI",
         "*.{h,m}"
       ]
+    },
+    {
+      "name": "JKUITableViewController",
+      "source_files": [
+        "JKUIBaseKit/JKUITableViewController",
+        "*.{h,m}"
+      ],
+      "dependencies": {
+        "MJRefresh": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "JKUIBaseKit/JKUIMacro": [
+
+        ]
+      }
     }
   ]
 }

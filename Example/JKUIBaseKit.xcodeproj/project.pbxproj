@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		77A28782C178BD971E38057E /* libPods-JKUIBaseKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B835EB0E483EF831075E16 /* libPods-JKUIBaseKit_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		FCE4FDCE249B556D00009F3A /* JKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE4FDCD249B556D00009F3A /* JKTestViewController.m */; };
+		FCE4FDD1249B593300009F3A /* JKTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE4FDD0249B593300009F3A /* JKTestModel.m */; };
 		FCFE7BB51ED824F400CF3B4C /* JKViewController_A.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */; };
 		FCFE7BB81ED8250100CF3B4C /* JKViewController_B.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFE7BB71ED8250100CF3B4C /* JKViewController_B.m */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,10 @@
 		B801550A4572C5CCD4F4DB3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D0FE6C1E8D005BE2C8A993F6 /* Pods-JKUIBaseKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKUIBaseKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKUIBaseKit_Example/Pods-JKUIBaseKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F05D208A794B6198608C45F0 /* JKUIBaseKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKUIBaseKit.podspec; path = ../JKUIBaseKit.podspec; sourceTree = "<group>"; };
+		FCE4FDCC249B556D00009F3A /* JKTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTestViewController.h; sourceTree = "<group>"; };
+		FCE4FDCD249B556D00009F3A /* JKTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTestViewController.m; sourceTree = "<group>"; };
+		FCE4FDCF249B593300009F3A /* JKTestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTestModel.h; sourceTree = "<group>"; };
+		FCE4FDD0249B593300009F3A /* JKTestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTestModel.m; sourceTree = "<group>"; };
 		FCFE7BB31ED824F400CF3B4C /* JKViewController_A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKViewController_A.h; sourceTree = "<group>"; };
 		FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKViewController_A.m; sourceTree = "<group>"; };
 		FCFE7BB61ED8250100CF3B4C /* JKViewController_B.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKViewController_B.h; sourceTree = "<group>"; };
@@ -143,6 +149,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JKViewController.h */,
 				6003F5A6195388D20070C39A /* JKViewController.m */,
+				FCE4FDCF249B593300009F3A /* JKTestModel.h */,
+				FCE4FDD0249B593300009F3A /* JKTestModel.m */,
+				FCE4FDCC249B556D00009F3A /* JKTestViewController.h */,
+				FCE4FDCD249B556D00009F3A /* JKTestViewController.m */,
 				FCFE7BB31ED824F400CF3B4C /* JKViewController_A.h */,
 				FCFE7BB41ED824F400CF3B4C /* JKViewController_A.m */,
 				FCFE7BB61ED8250100CF3B4C /* JKViewController_B.h */,
@@ -267,6 +277,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -329,10 +340,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JKUIBaseKit_Example/Pods-JKUIBaseKit_Example-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +381,8 @@
 				FCFE7BB81ED8250100CF3B4C /* JKViewController_B.m in Sources */,
 				6003F59E195388D20070C39A /* JKAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JKViewController.m in Sources */,
+				FCE4FDCE249B556D00009F3A /* JKTestViewController.m in Sources */,
+				FCE4FDD1249B593300009F3A /* JKTestModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				FCFE7BB51ED824F400CF3B4C /* JKViewController_A.m in Sources */,
 			);

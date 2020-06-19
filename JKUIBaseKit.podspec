@@ -37,6 +37,13 @@ s.subspec 'JKCustomUI' do |ss|
 ss.source_files = "JKUIBaseKit/JKCustomUI","*.{h,m}"
 end
 
+s.subspec 'JKUITableViewController' do |ss|
+    ss.source_files = "JKUIBaseKit/JKUITableViewController","*.{h,m}"
+    ss.dependency 'MJRefresh'
+    ss.dependency 'Masonry'
+    ss.dependency 'JKUIBaseKit/JKUIMacro'
+end
+
 
 
 

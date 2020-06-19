@@ -8,7 +8,8 @@
 
 #import "JKViewController.h"
 #import <JKUIBaseKit/JKUIBaseKit.h>
-#import "JKViewController_A.h"
+#import "JKTestViewController.h"
+
 @interface JKViewController ()
 
 @end
@@ -29,7 +30,7 @@
 
 
 -(void)tapFun{
-    JKViewController_A * vc = [[JKViewController_A alloc]init];
+    JKTestViewController * vc = [[JKTestViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

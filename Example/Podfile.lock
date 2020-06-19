@@ -4,6 +4,7 @@ PODS:
     - JKUIBaseKit/JKSVProgressHUD (= 0.3.5)
     - JKUIBaseKit/JKUICategory (= 0.3.5)
     - JKUIBaseKit/JKUIMacro (= 0.3.5)
+    - JKUIBaseKit/JKUITableViewController (= 0.3.5)
     - SVProgressHUD
   - JKUIBaseKit/JKCustomUI (0.3.5):
     - SVProgressHUD
@@ -15,6 +16,13 @@ PODS:
     - SVProgressHUD
   - JKUIBaseKit/JKUIMacro (0.3.5):
     - SVProgressHUD
+  - JKUIBaseKit/JKUITableViewController (0.3.5):
+    - JKUIBaseKit/JKUIMacro
+    - Masonry
+    - MJRefresh
+    - SVProgressHUD
+  - Masonry (1.1.0)
+  - MJRefresh (3.4.3)
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
@@ -22,6 +30,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Masonry
+    - MJRefresh
     - SVProgressHUD
 
 EXTERNAL SOURCES:
@@ -29,7 +39,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKUIBaseKit: 2ff94f46870b52766365b2c26f33050dee924d4a
+  JKUIBaseKit: a0bc68bd9eb55a529fb5d2a4c03257a35f8f5928
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
 PODFILE CHECKSUM: 739a3bd9a66f00e6d306b0bcd2926afd06de5369
